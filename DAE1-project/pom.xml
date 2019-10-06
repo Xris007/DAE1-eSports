@@ -6,7 +6,9 @@
 
     <groupId>pe.isil</groupId>
     <artifactId>eSports-proyect</artifactId>
-    <version>0.01</version>
+    <version>1.0-SNAPSHOT</version>
+
+
 
     <dependencies>
         <dependency>

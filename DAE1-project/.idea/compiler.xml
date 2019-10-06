@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DAE1-project" />
+        <module name="eSports-proyect" />
       </profile>
     </annotationProcessing>
   </component>
