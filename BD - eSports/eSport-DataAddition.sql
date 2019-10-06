@@ -5,7 +5,7 @@ go
 --- Agregar Datos ---------------
 
 --- Tabla Personal
-insert PERSONAL values('100', 'Cho', 'William', 'Corea del Sur', 'Anfitrión')
+insert into PERSONAL values('100', 'Cho', 'William', 'Corea del Sur', 'Anfitrión')
 insert PERSONAL values('101', 'Richardson', 'Alex', 'Reino Unido', 'Anfitrión')
 insert PERSONAL values('102', 'Chaloner', 'Paul', 'Reino Unido', 'Anfitrión')
 insert PERSONAL values('103', 'van der Heijden', 'Jorien', 'Holanda', 'Anfitrión')
@@ -110,62 +110,61 @@ insert DETALLE_PERSONAL values('136', '20', '20170802', '20170812')
 insert DETALLE_PERSONAL values('137', '20', '20170802', '20170812')
 
 --- Tabla Equipo
-insert EQUIPO values('1000', 'Virtus.pro', 'Rusia')
-insert EQUIPO values('1010', 'Team Liquid', 'Europa')
-insert EQUIPO values('1020', 'PSG.LGD', 'China')
-insert EQUIPO values('1030', 'Team Secret', 'Europa')
-insert EQUIPO values('1040', 'Mineski', 'Filipinas')
-insert EQUIPO values('1050', 'Vici Gaming', 'China')
-insert EQUIPO values('1060', 'Newbee', 'China')
-insert EQUIPO values('1070', 'VGJ.Thunder', 'China')
-insert EQUIPO values('1080', 'OG', 'Europa')
-insert EQUIPO values('1090', 'Winstrike Team', 'Rusia')
-insert EQUIPO values('1100', 'Team Serenity', 'China')
-insert EQUIPO values('1110', 'Invictus Gaming', 'China')
-insert EQUIPO values('1120', 'Fnatic', 'Malasia')
-insert EQUIPO values('1130', 'TNC Predator', 'Filipinas')
-insert EQUIPO values('1140', 'VGJ.Storm', 'Estados Unidos')
-insert EQUIPO values('1150', 'Evil Geniuses', 'Estados Unidos')
-insert EQUIPO values('1160', 'OpTic Gaming', 'Estados Unidos')
-insert EQUIPO values('1170', 'paiN Gaming', 'Brasil')
+insert into EQUIPO values('1000', 'Virtus.pro', 'Rusia')
+insert into EQUIPO values('1010', 'Team Liquid', 'Europa')
+insert into EQUIPO values('1020', 'PSG.LGD', 'China')
+insert into EQUIPO values('1030', 'Team Secret', 'Europa')
+insert into EQUIPO values('1040', 'Mineski', 'Filipinas')
+insert into EQUIPO values('1050', 'Vici Gaming', 'China')
+insert into EQUIPO values('1060', 'Newbee', 'China')
+insert into EQUIPO values('1070', 'VGJ.Thunder', 'China')
+insert into EQUIPO values('1080', 'OG', 'Europa')
+insert into EQUIPO values('1090', 'Winstrike Team', 'Rusia')
+insert into EQUIPO values('1100', 'Team Serenity', 'China')
+insert into EQUIPO values('1110', 'Invictus Gaming', 'China')
+insert into EQUIPO values('1120', 'Fnatic', 'Malasia')
+insert into EQUIPO values('1130', 'TNC Predator', 'Filipinas')
+insert into EQUIPO values('1140', 'VGJ.Storm', 'Estados Unidos')
+insert into EQUIPO values('1150', 'Evil Geniuses', 'Estados Unidos')
+insert into EQUIPO values('1160', 'OpTic Gaming', 'Estados Unidos')
+insert into EQUIPO values('1170', 'paiN Gaming', 'Brasil')
 
 --- Tabla Detalle Equipo
-insert DETALLE_EQUIPO values('1000', '10', '10', '6','5')
-insert DETALLE_EQUIPO values('1010', '10', '13', '3','4')
-insert DETALLE_EQUIPO values('1020', '10', '11', '5','2')
-insert DETALLE_EQUIPO values('1030', '10', '8', '8','6')
-insert DETALLE_EQUIPO values('1040', '10', '5', '11','10')
-insert DETALLE_EQUIPO values('1050', '10', '7', '9','12')
-insert DETALLE_EQUIPO values('1060', '10', '8', '8','15')
-insert DETALLE_EQUIPO values('1070', '10', '6', '10','16')
-insert DETALLE_EQUIPO values('1080', '10', '9', '7','1')
-insert DETALLE_EQUIPO values('1090', '10', '4', '12','11')
-insert DETALLE_EQUIPO values('1100', '10', '7', '9','9')
-insert DETALLE_EQUIPO values('1110', '10', '4', '12','17')
-insert DETALLE_EQUIPO values('1120', '10', '7', '9','13')
-insert DETALLE_EQUIPO values('1130', '10', '7', '9','14')
-insert DETALLE_EQUIPO values('1140', '10', '12', '4','8')
-insert DETALLE_EQUIPO values('1150', '10', '13', '3','3')
-insert DETALLE_EQUIPO values('1160', '10', '8', '8','7')
-insert DETALLE_EQUIPO values('1170', '10', '5', '11','18')
-insert DETALLE_EQUIPO values('1000', '20', '10', '6','5')
-insert DETALLE_EQUIPO values('1010', '20', '13', '3','1')
-insert DETALLE_EQUIPO values('1020', '20', '12', '4','4')
-insert DETALLE_EQUIPO values('1030', '20', '7', '9','9')
-insert DETALLE_EQUIPO values('1040', '20', '5', '11','13')
-insert DETALLE_EQUIPO values('1050', '20', '5', '11','15')
-insert DETALLE_EQUIPO values('1060', '20', '11', '5','2')
-insert DETALLE_EQUIPO values('1070', '20', '7', '9','16')
-insert DETALLE_EQUIPO values('1080', '20', '9', '7','8')
-insert DETALLE_EQUIPO values('1090', '20', '6', '10','14')
-insert DETALLE_EQUIPO values('1100', '20', '6', '10','12')
-insert DETALLE_EQUIPO values('1110', '20', '10', '6','6')
-insert DETALLE_EQUIPO values('1120', '20', '2', '14','17')
-insert DETALLE_EQUIPO values('1130', '20', '9', '7','11')
-insert DETALLE_EQUIPO values('1140', '20', '6', '10','7')
-insert DETALLE_EQUIPO values('1150', '20', '11', '5','10')
-insert DETALLE_EQUIPO values('1160', '20', '14', '2','3')
-insert DETALLE_EQUIPO values('1170', '20', '1', '15','18')
+insert into DETALLE_EQUIPO values('1000', '10', '10', '6','5');
+insert into DETALLE_EQUIPO values('1010', '10', '13', '3','4');
+insert into DETALLE_EQUIPO values('1020', '10', '11', '5','2');
+insert into DETALLE_EQUIPO values('1030', '10', '8', '8','6');
+insert into DETALLE_EQUIPO values('1040', '10', '5', '11','10');
+insert into DETALLE_EQUIPO values('1050', '10', '7', '9','12');
+insert into DETALLE_EQUIPO values('1060', '10', '8', '8','15');
+insert into DETALLE_EQUIPO values('1070', '10', '6', '10','16');
+insert into DETALLE_EQUIPO values('1080', '10', '9', '7','1');
+insert into DETALLE_EQUIPO values('1090', '10', '4', '12','11');
+insert into DETALLE_EQUIPO values('1100', '10', '7', '9','9');
+insert into DETALLE_EQUIPO values('1110', '10', '4', '12','17');
+insert into DETALLE_EQUIPO values('1120', '10', '7', '9','13');
+insert into DETALLE_EQUIPO values('1130', '10', '7', '9','14');
+insert into DETALLE_EQUIPO values('1140', '10', '12', '4','8');
+insert into DETALLE_EQUIPO values('1150', '10', '13', '3','3');
+insert into DETALLE_EQUIPO values('1160', '10', '8', '8','7');
+insert into DETALLE_EQUIPO values('1170', '10', '5', '11','18');
+insert into DETALLE_EQUIPO values('1000', '20', '10', '6','5');
+insert into DETALLE_EQUIPO values('1010', '20', '13', '3','1');
+insert into DETALLE_EQUIPO values('1020', '20', '12', '4','4');
+insert into DETALLE_EQUIPO values('1030', '20', '7', '9','9');
+insert into DETALLE_EQUIPO values('1040', '20', '5', '11','13');
+insert into DETALLE_EQUIPO values('1050', '20', '5', '11','15');
+insert into DETALLE_EQUIPO values('1060', '20', '11', '5','2');
+insert into DETALLE_EQUIPO values('1080', '20', '9', '7','8');
+insert into DETALLE_EQUIPO values('1090', '20', '6', '10','14');
+insert into DETALLE_EQUIPO values('1100', '20', '6', '10','12');
+insert into DETALLE_EQUIPO values('1110', '20', '10', '6','6');
+insert into DETALLE_EQUIPO values('1120', '20', '2', '14','17');
+insert into DETALLE_EQUIPO values('1130', '20', '9', '7','11');
+insert into DETALLE_EQUIPO values('1140', '20', '6', '10','7');
+insert into DETALLE_EQUIPO values('1150', '20', '11', '5','10');
+insert into DETALLE_EQUIPO values('1160', '20', '14', '2','3');
+insert into DETALLE_EQUIPO values('1170', '20', '1', '15','18');
 
 --- Tabla Jugador
 insert JUGADOR values('1001', 'Kushnarev', 'Roman', 'RAMZES666', '19', 'Rusia', '', '1000')

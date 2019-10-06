@@ -1,0 +1,5 @@
+Host: tuffi.db.elephantsql.com
+User: efaibmnc
+Password: HS40AuOa05d4wYYBTmXSzWfX0WxONfYb
+Database:  efaibmnc
+
