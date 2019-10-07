@@ -10,7 +10,7 @@ import java.util.List;
 public class TeamDAO {
     public static Team create(Team team){
         try (Connection connection = DatabaseUtil.getConnection()){
-            String sql = "INSERT INTO EQUIPO(IdEquipo, NomEquipo, PaisEquipo) values (?, ?, ?) ";
+            String sql = "INSERT INTO equipo (idequipo, nomequipo, paisequipo) values (?, ?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.setInt(1, team.getIdEquipo());
                 statement.setString(2, team.getNomEquipo());
@@ -27,7 +27,7 @@ public class TeamDAO {
     public static List<Team> findAllTeams(){
         List<Team> teams = new ArrayList<Team>();
         try (Connection connection = DatabaseUtil.getConnection()){
-            String sql = "SELECT * FROM EQUIPO";
+            String sql = "SELECT * FROM equipo";
             try (Statement statement = connection.createStatement()){
                 try (ResultSet resultSet = statement.executeQuery(sql)){
                     while (resultSet.next()){
@@ -52,7 +52,7 @@ public class TeamDAO {
     }
     public static Team findById (Integer id) {
         try (Connection connection = DatabaseUtil.getConnection()) {
-            String sql = "SELECT * FROM EQUIPO WHERE IdEquipo=?";
+            String sql = "SELECT * FROM equipo WHERE idequipo=?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, id);
 
@@ -69,5 +69,46 @@ public class TeamDAO {
         } catch (Exception exception) {
             throw new RuntimeException(exception);
         }
+    }
+    public static void update(Integer id, String name, String country){
+        if (findById(id) != null){
+            try (Connection connection = DatabaseUtil.getConnection()) {
+                String sql = "UPDATE equipo SET nomequipo = ?, paisequipo = ? WHERE idequipo = ?";
+                try(PreparedStatement statement = connection.prepareStatement(sql)){
+                    statement.setString(1, name);
+                    statement.setString(2, country);
+
+                    statement.setInt(4, id);
+                    statement.executeUpdate();
+                    System.out.println("Team update");
+                }
+            } catch (Exception exception) {
+                throw new RuntimeException(exception);
+            }
+        }else{
+            System.err.println("Team does not exist");
+        }
+    }
+    public static void delete(Integer id){
+        if (findById(id) != null){
+            try (Connection connection = DatabaseUtil.getConnection()) {
+                String sql = "DELETE FROM equipo WHERE idequipo=?";
+                try(PreparedStatement statement = connection.prepareStatement(sql)){
+                    statement.setInt(1, id);
+                    statement.executeUpdate();
+                    if (findById(id) == null){
+                        System.out.println("Team delete");
+                    }else{
+                        System.err.println("Error");
+                    }
+
+                }
+            } catch (Exception exception) {
+                throw new RuntimeException(exception);
+            }
+        }else{
+            System.err.println("Results not found");
+        }
+
     }
 }
