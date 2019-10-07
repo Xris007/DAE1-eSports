@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TeamDAO {
-   /* public static Team create(Team team){
+    public static Team create(Team team){
         try (Connection connection = DatabaseUtil.getConnection()){
             String sql = "INSERT INTO EQUIPO(IdEquipo, NomEquipo, PaisEquipo) values (?, ?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
@@ -20,7 +20,7 @@ public class TeamDAO {
                 team.setIdEquipo(id);
                 return team;
             }
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
@@ -69,5 +69,5 @@ public class TeamDAO {
         } catch (Exception exception) {
             throw new RuntimeException(exception);
         }
-    }*/
+    }
 }

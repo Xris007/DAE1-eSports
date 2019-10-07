@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771052f1-5b55-40b3-bf8d-4f71b87450ef.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771052f1-5b55-40b3-bf8d-4f71b87450ef/storage_v2/_src_/database/eSports.RBTWcg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771052f1-5b55-40b3-bf8d-4f71b87450ef/storage_v2/_src_/database/eSports.RBTWcg/schema/INFORMATION_SCHEMA.NBgcMw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771052f1-5b55-40b3-bf8d-4f71b87450ef/storage_v2/_src_/database/eSports.RBTWcg/schema/dbo.sYMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771052f1-5b55-40b3-bf8d-4f71b87450ef/storage_v2/_src_/database/eSports.RBTWcg/schema/dbo.sYMBAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/771052f1-5b55-40b3-bf8d-4f71b87450ef/storage_v2/_src_/database/eSports.RBTWcg/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/util/DatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/util/DatabaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +150,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@29557307" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2744b03f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@2744b03f" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@63f988c4" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -174,7 +176,8 @@
       <workItem from="1570388101361" duration="68000" />
       <workItem from="1570388262025" duration="8144000" />
       <workItem from="1570399339396" duration="50000" />
-      <workItem from="1570401519283" duration="974000" />
+      <workItem from="1570401519283" duration="1362000" />
+      <workItem from="1570472847047" duration="974000" />
     </task>
     <servers />
   </component>
