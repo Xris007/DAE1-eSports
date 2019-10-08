@@ -96,11 +96,6 @@ public class TeamDAO {
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, id);
                     statement.executeUpdate();
-                    if (findById(id) == null){
-                        System.out.println("Team delete");
-                    }else{
-                        System.err.println("Error");
-                    }
 
                 }
             } catch (Exception exception) {

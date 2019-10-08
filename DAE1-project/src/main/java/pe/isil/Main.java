@@ -15,6 +15,12 @@ import static pe.isil.dao.TournamentDAO.findAllTournament;
 
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        TeamDAO.create(new Team(1180,"Power Rangers","Gringolandia"));
+        //TeamDAO.create(new Team(1180,"Power Rangers","Gringolandia"));
+
+       TeamDAO.delete(1180);
+
+
+
+
     }
 }
