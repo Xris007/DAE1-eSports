@@ -76,7 +76,29 @@ public class DetalleEquipoDAO {
         return detalleEquipo;
     }
 
-    public static void updateDetalleEquipo(Integer IdEquipo, Integer IdTorneo, Integer Victorias, Integer Derrotas, Integer Puesto){
+    public static void updateDetalleEquipoByTorneo(Integer IdEquipo, Integer IdTorneo, Integer Victorias, Integer Derrotas, Integer Puesto){
+        if (getById(IdEquipo, IdTorneo) != null){
+            try (Connection connection = DatabaseUtil.getConnection()) {
+                String sql = "UPDATE detalle_equipo SET idequipo = ?, idtorneo = ?, victorias = ?, derrotas = ?,  puesto = ? WHERE idtorneo = ?";
+                try(PreparedStatement statement = connection.prepareStatement(sql)){
+                    statement.setInt(1, IdEquipo);
+                    statement.setInt(2, IdTorneo);
+                    statement.setInt(3, Victorias);
+                    statement.setInt(4, Derrotas);
+                    statement.setInt(5, Puesto);
+                    statement.setInt(6, IdTorneo);
+                    statement.executeUpdate();
+                    System.out.println("Detalle del equipo actualizada");
+                }
+            } catch (Exception exception) {
+                throw new RuntimeException(exception);
+            }
+        }else{
+            System.err.println("Detalle Equipo no existe");
+        }
+    }
+
+    public static void updateDetalleEquipoByEquipo(Integer IdEquipo, Integer IdTorneo, Integer Victorias, Integer Derrotas, Integer Puesto){
         if (getById(IdEquipo, IdTorneo) != null){
             try (Connection connection = DatabaseUtil.getConnection()) {
                 String sql = "UPDATE detalle_equipo SET idequipo = ?, idtorneo = ?, victorias = ?, derrotas = ?,  puesto = ? WHERE idequipo = ?";
@@ -86,6 +108,7 @@ public class DetalleEquipoDAO {
                     statement.setInt(3, Victorias);
                     statement.setInt(4, Derrotas);
                     statement.setInt(5, Puesto);
+                    statement.setInt(6, IdEquipo);
                     statement.executeUpdate();
                     System.out.println("Detalle del equipo actualizada");
                 }
