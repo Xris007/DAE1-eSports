@@ -4,13 +4,14 @@
 <%@ page import="pe.isil.model.Team" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <head>
     <title>Home</title>
 </head>
 <body>
-
-<h1>Welcome <%= ((User) session.getAttribute("user")).getUsername() %> !</h1>
 <br>
+<% String str = ((User) session.getAttribute("user")).getUsername(); %>
+<h1 class="text-center" style="font-family: 'Rage Italic'">WELCOME <%= str.toUpperCase() %> </h1>
 <hr>
 <br>
 <%
@@ -19,22 +20,23 @@
         System.out.println("Teams exist");
     }
 %>
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>País</th>
+<div class="container">
+<table class="table table-bordered">
+    <tr class="thead-dark">
+        <th class="text-center">ID</th>
+        <th class="text-center">Nombre</th>
+        <th class="text-center">País</th>
     </tr>
     <%
         for(Team team : teams) {
     %>
     <tr>
-        <td><%=team.getIdEquipo()%></td>
-        <td><%=team.getNomEquipo()%></td>
-        <td><%=team.getPaisEquipo()%></td>
+        <td class="text-center"><%=team.getIdEquipo()%></td>
+        <td class="text-center"><%=team.getNomEquipo()%></td>
+        <td class="text-center"><%=team.getPaisEquipo()%></td>
     </tr>
     <%}%>
 </table>
-
+</div>
 </body>
 </html>

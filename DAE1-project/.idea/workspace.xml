@@ -7,26 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/DaoContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/DetalleEquipoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/DetalleEquipoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TeamDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TeamDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/DetalleEquipoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/DetalleEquipoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TeamDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TeamDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +51,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -255,7 +247,8 @@
       <workItem from="1572296197048" duration="42000" />
       <workItem from="1572307922838" duration="495000" />
       <workItem from="1572310009801" duration="176000" />
-      <workItem from="1572312081484" duration="216000" />
+      <workItem from="1572312081484" duration="1076000" />
+      <workItem from="1572313394664" duration="274000" />
     </task>
     <servers />
   </component>
