@@ -18,12 +18,12 @@
 
   <context-param>
     <param-name>JDBC_USER</param-name>
-    <param-value>javaee_user</param-value>
+    <param-value>efaibmnc</param-value>
   </context-param>
 
   <context-param>
     <param-name>JDBC_PASSWORD</param-name>
-    <param-value>javaee_user</param-value>
+    <param-value>HS40AuOa05d4wYYBTmXSzWfX0WxONfYb</param-value>
   </context-param>
 
   <listener>
@@ -35,7 +35,7 @@
   </session-config>
 
   <welcome-file-list>
-    <welcome-file>/index.jsp</welcome-file>
+    <welcome-file>/login.jsp</welcome-file>
   </welcome-file-list>
 
 </web-app>
