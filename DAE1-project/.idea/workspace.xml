@@ -7,11 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/eSports-proyect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/model/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/model/Tournament.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +39,51 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="efaibmnc: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="efaibmnc: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="efaibmnc: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="efaibmnc: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="efaibmnc: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="torneo: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -73,23 +123,24 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\webapp" />
-      <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\java\pe\isil" />
-      <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\java\pe\isil\dao" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Chris\Documents\ISIL\DAE\DAE1-eSports\DAE1-eSports\DAE1-project\src\main\java\pe\isil\util" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pe.isil.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Chris\Documents\ISIL\DAE\DAE1-eSports\DAE1-eSports\DAE1-project\src\main\java\pe\isil\util" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\velz\DAE1-eSports\DAE1-project\src\main" />
+      <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\webapp" />
+      <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\java\pe\isil" />
+      <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\java\pe\isil\dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pe.isil.Main" />
       <module name="eSports-proyect" />
@@ -119,7 +170,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/eSports_proyect_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="eSports-proyect:war exploded">
@@ -207,17 +257,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@95ca469a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@95ca469a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@49c1a5cf" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -249,6 +289,15 @@
       <workItem from="1572310009801" duration="176000" />
       <workItem from="1572312081484" duration="1076000" />
       <workItem from="1572313394664" duration="274000" />
+      <workItem from="1572313894428" duration="890000" />
+      <workItem from="1572912666152" duration="815000" />
+      <workItem from="1572914018603" duration="1792000" />
+      <workItem from="1572915837916" duration="1788000" />
+      <workItem from="1572917649344" duration="1789000" />
+      <workItem from="1572919465508" duration="1829000" />
+      <workItem from="1572921335554" duration="1789000" />
+      <workItem from="1572923195881" duration="979000" />
+      <workItem from="1572925008355" duration="13000" />
     </task>
     <servers />
   </component>

@@ -18,8 +18,8 @@ public class TournamentDAO {
                 statement.setString(3, tournament.getOrgTorneo());
                 statement.setString(4, tournament.getPaisTorneo());
                 statement.setString(5, tournament.getLugarTorneo());
-                statement.setDate(6, new Date(tournament.getFechaInicioTorneo().getTime()));
-                statement.setDate(7, new Date(tournament.getFechaFinTorneo().getTime()));
+                statement.setDate(6, Date.valueOf(tournament.getFechaInicioTorneo()));
+                statement.setDate(7, Date.valueOf(tournament.getFechaFinTorneo()));
                 statement.setInt(8, tournament.getIdJuego());
 
                 int id = statement.executeUpdate();
@@ -77,8 +77,8 @@ public class TournamentDAO {
                 resultSet.getString("OrgTorneo"),
                 resultSet.getString("PaisTorneo"),
                 resultSet.getString("LugarTorneo"),
-                resultSet.getDate("FechaInicioTorneo"),
-                resultSet.getDate("FechaFinTorneo"),
+                resultSet.getDate("FechaInicioTorneo").toLocalDate(),
+                resultSet.getDate("FechaFinTorneo").toLocalDate(),
                 resultSet.getInt("IdJuego")
         );
         return tournament;
