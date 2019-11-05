@@ -2,4 +2,5 @@ Host: tuffi.db.elephantsql.com
 User: efaibmnc
 Password: HS40AuOa05d4wYYBTmXSzWfX0WxONfYb
 Database:  efaibmnc
-
+URL:  postgres://efaibmnc:HS40AuOa05d4wYYBTmXSzWfX0WxONfYb@tuffi.db.elephantsql.com:5432/efaibmnc
+URL2: jdbc:postgresql://tuffi.db.elephantsql.com:5432/efaibmnc

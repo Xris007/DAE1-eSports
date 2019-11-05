@@ -1,4 +1,4 @@
-<%@ page import="pe.isil.model.User" %>
+<%@ page import="pe.isil.model.Usuario" %>
 <%@ page import="pe.isil.dao.TeamDAO" %>
 <%@ page import="java.util.List" %>
 <%@ page import="pe.isil.model.Team" %>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <br>
-<% String str = ((User) session.getAttribute("user")).getUsername(); %>
+<% String str = ((Usuario) session.getAttribute("usuario")).getUsername(); %>
 <h1 class="text-center" style="font-family: 'Rage Italic'">WELCOME <%= str.toUpperCase() %> </h1>
 <hr>
 <br>

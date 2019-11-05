@@ -1,26 +1,33 @@
 package pe.isil;
 
-import pe.isil.dao.DetalleEquipoDAO;
-import pe.isil.dao.TeamDAO;
-import pe.isil.dao.TournamentDAO;
-import pe.isil.model.DetalleEquipo;
-import pe.isil.model.Team;
-import pe.isil.model.Tournament;
-import pe.isil.util.DatabaseUtil;
+import pe.isil.model.Usuario;
 
-import java.sql.SQLException;
-import java.util.List;
-
-import static pe.isil.dao.TournamentDAO.findAllTournament;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 public class Main {
-    public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        //TeamDAO.create(new Team(1180,"Power Rangers","Gringolandia"));
 
-       TeamDAO.delete(1180);
+    private static EntityManager entityManager;
+    private static EntityManagerFactory builder;
 
+    public static void main(String[] args) {
+        builder = Persistence.createEntityManagerFactory("isilPU");
+        entityManager = builder.createEntityManager();
 
+        entityManager.getTransaction().begin();
+        entityManager.getTransaction().rollback();
+        entityManager.getTransaction().commit();
 
+        Usuario usuario = new Usuario();
+        usuario.setUserid(1000);
+        usuario.setUsername("DoctorSasquatch");
+        usuario.setPassword("1234");
 
+        entityManager.persist(usuario);
+        Usuario usuario1 = entityManager.find(Usuario.class, 1000);
+        System.out.println("User = " + usuario1);
+
+        entityManager.getTransaction().commit();
     }
 }

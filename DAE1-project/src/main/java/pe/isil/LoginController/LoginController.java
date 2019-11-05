@@ -3,7 +3,7 @@ package pe.isil.LoginController;
 
 import pe.isil.dao.DaoContext;
 import pe.isil.dao.UserDAO;
-import pe.isil.model.User;
+import pe.isil.model.Usuario;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,11 +39,11 @@ public class LoginController extends HttpServlet {
         req.setAttribute("username", username);
         req.setAttribute("password", password);
 
-        User user = UserDAO.isValidLogin(username,password);
+        Usuario usuario = UserDAO.isValidLogin(username,password);
 
-        if (user != null){
+        if (usuario != null){
             HttpSession session = req.getSession();
-            session.setAttribute("user", user);
+            session.setAttribute("user", usuario);
             req.getRequestDispatcher("/home.jsp").forward(req, resp);
         } else {
             req.setAttribute("errorMessage", "Wrong credentials");

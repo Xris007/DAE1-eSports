@@ -1,6 +1,7 @@
 package pe.isil.dao;
 
-import pe.isil.model.User;
+import pe.isil.model.Usuario;
+import pe.isil.model.Usuario;
 import pe.isil.util.DatabaseUtil;
 
 import java.sql.Connection;
@@ -10,7 +11,7 @@ import java.sql.SQLException;
 
 public class UserDAO extends DaoContext {
 
-    public static User isValidLogin(String username, String password) {
+    public static Usuario isValidLogin(String username, String password) {
         try (Connection connection = DatabaseUtil.getConnection()) {
 
             String sql = "SELECT * FROM users WHERE login=? AND password=?";
@@ -24,7 +25,7 @@ public class UserDAO extends DaoContext {
 
                     if (rs.next()) {
 
-                        return new User(
+                        return new Usuario(
                                 rs.getInt("userid"),
                                 rs.getString("login"),
                                 rs.getString("password")
