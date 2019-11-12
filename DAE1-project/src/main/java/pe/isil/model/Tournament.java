@@ -1,22 +1,49 @@
+
 package pe.isil.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.time.LocalDate;
 import java.util.Date;
 
 
+@Entity
+@Table(name = "torneo")
 public class Tournament {
+
+    @Id
+    @Column(name = "idtorneo")
     private Integer IdTorneo;
+
+    @Column(name = "nomtorneo")
     private String NomTorneo;
+
+    @Column(name = "orgtorneo")
     private String OrgTorneo;
+
+    @Column(name = "paistorneo")
     private String PaisTorneo;
+
+    @Column(name = "lugartorneo")
     private String LugarTorneo;
-    private Date FechaInicioTorneo;
-    private Date FechaFinTorneo;
+
+    @Column(name = "fechainiciotorneo")
+    private LocalDate FechaInicioTorneo;
+
+    @Column(name = "fechafintorneo")
+    private LocalDate FechaFinTorneo;
+
+    @Column(name = "idjuego")
     private Integer IdJuego;
+
+
 
     public Tournament() {
     }
 
-    public Tournament(Integer idTorneo, String nomTorneo, String orgTorneo, String paisTorneo, String lugarTorneo, Date fechaInicioTorneo, Date fechaFinTorneo, Integer idJuego) {
+    public Tournament(Integer idTorneo, String nomTorneo, String orgTorneo, String paisTorneo, String lugarTorneo, LocalDate fechaInicioTorneo, LocalDate fechaFinTorneo, Integer idJuego) {
         IdTorneo = idTorneo;
         NomTorneo = nomTorneo;
         OrgTorneo = orgTorneo;
@@ -67,19 +94,19 @@ public class Tournament {
         LugarTorneo = lugarTorneo;
     }
 
-    public Date getFechaInicioTorneo() {
+    public LocalDate getFechaInicioTorneo() {
         return FechaInicioTorneo;
     }
 
-    public void setFechaInicioTorneo(Date fechaInicioTorneo) {
+    public void setFechaInicioTorneo(LocalDate fechaInicioTorneo) {
         FechaInicioTorneo = fechaInicioTorneo;
     }
 
-    public Date getFechaFinTorneo() {
+    public LocalDate getFechaFinTorneo() {
         return FechaFinTorneo;
     }
 
-    public void setFechaFinTorneo(Date fechaFinTorneo) {
+    public void setFechaFinTorneo(LocalDate fechaFinTorneo) {
         FechaFinTorneo = fechaFinTorneo;
     }
 
@@ -89,5 +116,19 @@ public class Tournament {
 
     public void setIdJuego(Integer idJuego) {
         IdJuego = idJuego;
+    }
+
+    @Override
+    public String toString() {
+        return "Tournament{" +
+                "IdTorneo=" + IdTorneo +
+                ", NomTorneo='" + NomTorneo + '\'' +
+                ", OrgTorneo='" + OrgTorneo + '\'' +
+                ", PaisTorneo='" + PaisTorneo + '\'' +
+                ", LugarTorneo='" + LugarTorneo + '\'' +
+                ", FechaInicioTorneo=" + FechaInicioTorneo +
+                ", FechaFinTorneo=" + FechaFinTorneo +
+                ", IdJuego=" + IdJuego +
+                '}';
     }
 }

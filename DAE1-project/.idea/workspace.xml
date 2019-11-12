@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/service/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/service/TornamentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eSports-proyect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/eSports-proyect.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/Usuario.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +82,16 @@
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="torneo: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="efaibmnc@tuffi.db.elephantsql.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="efaibmnc: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="usuario: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
@@ -120,7 +130,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Profesor/isil-dae1-2019-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Proyecto2/DAE1-eSports" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -298,7 +308,9 @@
       <workItem from="1572917332643" duration="1743000" />
       <workItem from="1572919098556" duration="1807000" />
       <workItem from="1572921187229" duration="1799000" />
-      <workItem from="1572923013591" duration="245000" />
+      <workItem from="1572923013591" duration="1645000" />
+      <workItem from="1573517398721" duration="1448000" />
+      <workItem from="1573519172206" duration="1463000" />
     </task>
     <servers />
   </component>
