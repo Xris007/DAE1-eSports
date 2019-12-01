@@ -24,28 +24,35 @@
     int prizepoolCounter = 1;
     String txt = "txtPrizepool";
 %>
-<div class="container">
-    <table class="table table-bordered">
-        <tr class="thead-dark">
-            <th class="text-center">Place</th>
-            <th class="text-center">Percentage</th>
-        </tr>
-        <%
-            for(Prizepool prizepool : prizepools) {
-        %>
-        <tr>
-            <td class="text-center"><%=prizepool.getPlace()%></td>
-            <td class="text-center"><%=prizepool.getPercentage()%></td>
-            <td><div class="form-group">
-                <input type="text"  class="form-control" placeholder="Edit" name="<%= txt + prizepoolCounter%>" value="${prizepool}" width="50">
-            </div></td>
 
-        </tr>
-        <%
-                System.out.println( txt + prizepoolCounter);
-                prizepoolCounter++;
-            }%>
-    </table>
+<div class="login-form">
+    <form method="post" action="prizepool">
+        <div class="container">
+            <table class="table table-bordered">
+                <tr class="thead-dark">
+                    <th class="text-center">Place</th>
+                    <th class="text-center">Percentage</th>
+                </tr>
+                <%
+                    for(Prizepool prizepool : prizepools) {
+                %>
+                <tr>
+                    <td class="text-center"><%=prizepool.getPlace()%></td>
+                    <td><div class="form-group">
+                        <input type="text"  class="form-control" placeholder="Edit" name="<%= txt + prizepoolCounter%>" value="<%=prizepool.getPercentage()%>"
+                        style="width: 100px">
+                    </div></td>
+
+                </tr>
+                <%
+                        prizepoolCounter++;
+                    }%>
+            </table>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Update</button>
+            </div>
+        </div>
+    </form>
 </div>
 </body>
 </html>

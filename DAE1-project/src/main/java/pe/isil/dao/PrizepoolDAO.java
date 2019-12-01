@@ -29,7 +29,7 @@ public class PrizepoolDAO {
     public static List<Prizepool> listPrizepool(){
         List<Prizepool> prizepools = new ArrayList<Prizepool>();
         try (Connection connection = DatabaseUtil.getConnection()){
-            String sql = "SELECT * FROM prizepool";
+            String sql = "SELECT * FROM prizepool ORDER BY puesto";
             try (Statement statement = connection.createStatement()){
                 try (ResultSet resultSet = statement.executeQuery(sql)){
                     while (resultSet.next()){
@@ -83,7 +83,7 @@ public class PrizepoolDAO {
                     statement.setInt(2, id);
 
                     statement.executeUpdate();
-                    System.out.println("Prizepool percetage updated");
+                    System.out.println("Prizepool " + id + " percetage updated");
                 }
             } catch (Exception exception) {
                 throw new RuntimeException(exception);

@@ -8,10 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/PrizepoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/PrizepoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/PrizepoolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/PrizepoolDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/LoginController/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/LoginController/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/LoginController/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/LoginController/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/PrizepoolDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/PrizepoolDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/PrizepoolDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/PrizepoolDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +102,9 @@
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="eSports-proyect" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -268,7 +273,22 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@982cc65a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@982cc65a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@432b4c01" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@982cc65a" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6571c0ce" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -315,7 +335,10 @@
       <workItem from="1575219149860" duration="1773000" />
       <workItem from="1575220984488" duration="344000" />
       <workItem from="1575221471992" duration="1766000" />
-      <workItem from="1575223491800" duration="493000" />
+      <workItem from="1575223491800" duration="1788000" />
+      <workItem from="1575225345134" duration="1783000" />
+      <workItem from="1575227198429" duration="1782000" />
+      <workItem from="1575229037761" duration="357000" />
     </task>
     <servers />
   </component>
