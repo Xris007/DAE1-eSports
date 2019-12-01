@@ -11,6 +11,19 @@
     <title>Title</title>
 </head>
 <body>
+<div class="container">
+    <table class="table table-bordered">
+        <tr class="thead-dark">
+            <th class="text-center">Place</th>
+            <th class="text-center">Percentage</th>
+        </tr>
 
+        <tr>
+            <td class="text-center"><%=team.getIdEquipo()%></td>
+            <td class="text-center"><%=team.getNomEquipo()%></td>
+        </tr>
+
+    </table>
+</div>
 </body>
 </html>
