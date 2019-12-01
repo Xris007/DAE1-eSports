@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TeamDAO {
+public class TeamDAO extends DaoContext {
     public static Team create(Team team){
         try (Connection connection = DatabaseUtil.getConnection()){
             String sql = "INSERT INTO equipo (idequipo, nomequipo, paisequipo) values (?, ?, ?) ";

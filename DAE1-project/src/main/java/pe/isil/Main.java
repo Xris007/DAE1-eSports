@@ -1,5 +1,7 @@
 package pe.isil;
 
+import org.h2.engine.User;
+import pe.isil.dao.UserDAO;
 import pe.isil.model.Usuario;
 import pe.isil.service.UsuarioService;
 
@@ -14,7 +16,7 @@ public class Main {
     private static EntityManagerFactory builder;
 
     public static void main(String[] args) {
-        builder = Persistence.createEntityManagerFactory("eSportsPU");
+/*        builder = Persistence.createEntityManagerFactory("eSportsPU");
         entityManager = builder.createEntityManager();
 
         entityManager.getTransaction().begin();
@@ -30,7 +32,13 @@ public class Main {
 
         usuarioService.create(usuario);
         List<Usuario> usuarios = usuarioService.findAll();
-        System.out.println("Lista de Usuarios: " + usuarios);
+        System.out.println("Lista de Usuarios: " + usuarios);*/
+
+        Usuario usuario = UserDAO.isValidLogin("TEST", "1234");
+        if (usuario == null){
+            System.out.println("user is null");
+        }
+         else System.out.println(usuario.toString());
 
 
 //        usuarioService.delete(2000);

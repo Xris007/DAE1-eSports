@@ -18,8 +18,8 @@ public class TournamentDAO {
                 statement.setString(3, tournament.getOrgTorneo());
                 statement.setString(4, tournament.getPaisTorneo());
                 statement.setString(5, tournament.getLugarTorneo());
-                statement.setDate(6, new Date(tournament.getFechaInicioTorneo().getTime()));
-                statement.setDate(7, new Date(tournament.getFechaFinTorneo().getTime()));
+                statement.setDate(6,  new Date(tournament.getFechaInicioTorneo().getTime()));
+                statement.setDate(7,  new Date(tournament.getFechaFinTorneo().getTime()));
                 statement.setInt(8, tournament.getIdJuego());
 
                 int id = statement.executeUpdate();

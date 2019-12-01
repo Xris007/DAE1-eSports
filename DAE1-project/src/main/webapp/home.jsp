@@ -10,7 +10,7 @@
 </head>
 <body>
 <br>
-<% String str = ((Usuario) session.getAttribute("usuario")).getUsername(); %>
+<% String str = ((Usuario) session.getAttribute("username")).getUsername(); %>
 <h1 class="text-center" style="font-family: 'Rage Italic'">WELCOME <%= str.toUpperCase() %> </h1>
 <hr>
 <br>

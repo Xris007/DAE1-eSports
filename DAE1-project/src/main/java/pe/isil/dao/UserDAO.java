@@ -4,17 +4,14 @@ import pe.isil.model.Usuario;
 import pe.isil.model.Usuario;
 import pe.isil.util.DatabaseUtil;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class UserDAO extends DaoContext {
 
     public static Usuario isValidLogin(String username, String password) {
         try (Connection connection = DatabaseUtil.getConnection()) {
 
-            String sql = "SELECT * FROM users WHERE login=? AND password=?";
+            String sql = "SELECT * FROM usuario WHERE username=? AND password=?";
 
             try (PreparedStatement ps = connection.prepareStatement(sql)) {
 
@@ -27,7 +24,7 @@ public class UserDAO extends DaoContext {
 
                         return new Usuario(
                                 rs.getInt("userid"),
-                                rs.getString("login"),
+                                rs.getString("username"),
                                 rs.getString("password")
                         );
 
@@ -41,6 +38,7 @@ public class UserDAO extends DaoContext {
 
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
+
         }
 
 

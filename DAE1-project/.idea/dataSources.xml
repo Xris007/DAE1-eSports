@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://tuffi.db.elephantsql.com:5432/efaibmnc</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="kpqtbiai@isilo.db.elephantsql.com" uuid="a4d77d26-fa70-425d-b2ca-4adbd028e58d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://isilo.db.elephantsql.com:5432/kpqtbiai</jdbc-url>
+    </data-source>
   </component>
 </project>

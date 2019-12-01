@@ -1,10 +1,15 @@
 BD ACTUALIZADA
-HOST: silo.db.elephantsql.com
+HOST: isilo.db.elephantsql.com
 USER: kpqtbiai
-PASSWORD:9jyWcuKjmkkiHmvmFCugWbC3BKtKxVFe
+PASSWORD: 9jyWcuKjmkkiHmvmFCugWbC3BKtKxVFe
 DATABASDE: kpqtbiai
-URL:postgres://kpqtbiai:9jyWcuKjmkkiHmvmFCugWbC3BKtKxVFe@isilo.db.elephantsql.com:5432/kpqtbiai
+URL:
+jdbc:postgresql://isilo.db.elephantsql.com:5432/kpqtbiai
+postgres://kpqtbiai:9jyWcuKjmkkiHmvmFCugWbC3BKtKxVFe@isilo.db.elephantsql.com:5432/kpqtbiai
 
+
+
+ANTIGUA
 Host: tuffi.db.elephantsql.com
 User: efaibmnc
 Password: HS40AuOa05d4wYYBTmXSzWfX0WxONfYb

@@ -13,17 +13,17 @@
 
   <context-param>
     <param-name>JDBC_URL</param-name>
-    <param-value>jdbc:postgres://efaibmnc:HS40AuOa05d4wYYBTmXSzWfX0WxONfYb@tuffi.db.elephantsql.com:5432/efaibmnc</param-value>
+    <param-value>jdbc:postgresql://isilo.db.elephantsql.com:5432/kpqtbiai</param-value>
   </context-param>
 
   <context-param>
     <param-name>JDBC_USER</param-name>
-    <param-value>efaibmnc</param-value>
+    <param-value>kpqtbiai</param-value>
   </context-param>
 
   <context-param>
     <param-name>JDBC_PASSWORD</param-name>
-    <param-value>HS40AuOa05d4wYYBTmXSzWfX0WxONfYb</param-value>
+    <param-value>9jyWcuKjmkkiHmvmFCugWbC3BKtKxVFe</param-value>
   </context-param>
 
   <listener>

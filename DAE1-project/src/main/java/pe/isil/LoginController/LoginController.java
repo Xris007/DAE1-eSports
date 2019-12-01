@@ -43,10 +43,11 @@ public class LoginController extends HttpServlet {
 
         if (usuario != null){
             HttpSession session = req.getSession();
-            session.setAttribute("user", usuario);
+            session.setAttribute("username", usuario);
             req.getRequestDispatcher("/home.jsp").forward(req, resp);
         } else {
             req.setAttribute("errorMessage", "Wrong credentials");
+            System.out.println("Incorrect user");
             req.getRequestDispatcher("/login.jsp").forward(req, resp);
         }
     }

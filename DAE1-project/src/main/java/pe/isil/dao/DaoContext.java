@@ -18,6 +18,8 @@ public class DaoContext {
             dbUser = context.getInitParameter("JDBC_USER");
             dbPassword = context.getInitParameter("JDBC_PASSWORD");
 
+            System.out.println("URL: " + dbUrl);
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
