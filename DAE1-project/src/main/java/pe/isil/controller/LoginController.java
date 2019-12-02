@@ -44,7 +44,7 @@ public class LoginController extends HttpServlet {
         if (usuario != null){
             HttpSession session = req.getSession();
             session.setAttribute("username", usuario);
-            req.getRequestDispatcher("/calculate_winnings.jsp").forward(req, resp);
+            req.getRequestDispatcher("/home.jsp").forward(req, resp);
         } else {
             req.setAttribute("errorMessage", "Wrong credentials");
             System.out.println("Incorrect user");
