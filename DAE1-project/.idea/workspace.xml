@@ -7,32 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/ShowTeamsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/WinningsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings_showTeams.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/LoginController/PrizepoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/PrizepoolController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/DetalleEquipoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/DetalleEquipoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TeamDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/Tournament.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/LoginController/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/LoginController/PrizepoolController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/DetalleEquipoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/DetalleEquipoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TeamDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TeamDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/model/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/model/Tournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/LoginController/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/LoginController/PrizepoolController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/DetalleEquipoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/DetalleEquipoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TeamDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TeamDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/controller/WinningsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/WinningsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/PrizepoolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/PrizepoolDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/model/Prizepool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/model/Prizepool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/calculate_winnings_showTeams.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings_showTeams.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/controller/PrizepoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/controller/PrizepoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/controller/WinningsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/controller/WinningsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/PrizepoolDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/PrizepoolDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/model/Prizepool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/model/Prizepool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/controller/PrizepoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/controller/PrizepoolController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/controller/WinningsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/controller/WinningsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/PrizepoolDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/PrizepoolDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/model/Prizepool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/model/Prizepool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/model/Tournament.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/model/Tournament.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/calculate_winnings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/calculate_winnings.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/calculate_winnings_showTeams.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/calculate_winnings_showTeams.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pe.isil.Main" />
       <module name="eSports-proyect" />
@@ -378,7 +371,10 @@
       <workItem from="1575234722548" duration="1445000" />
       <workItem from="1575244610131" duration="1419000" />
       <workItem from="1575246454506" duration="1782000" />
-      <workItem from="1575248297620" duration="638000" />
+      <workItem from="1575248297620" duration="1808000" />
+      <workItem from="1575250154690" duration="1785000" />
+      <workItem from="1575251991598" duration="1783000" />
+      <workItem from="1575253831806" duration="554000" />
     </task>
     <servers />
   </component>

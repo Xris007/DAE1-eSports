@@ -23,21 +23,19 @@
 <form method="post" action="calculate_winnings">
     <h2 class="text-center">Calculate Winnings</h2>
     <div class="form-group">
-        <input type="number" min="1" class="form-control" placeholder="Total Prizepool" name="txtWinnings" required="required">
+        <input type="number" class="form-control" placeholder="Total Prizepool" name="txtWinnings" required="required">
     </div>
     <select name="tournamentList">
         <%
             for(int i = 0; i < tournaments.size(); i++) {
                 System.out.println(tournaments.get(i).toString());
         %>
-        <option><%=tournaments.get(i).getNomTorneo()%></option>
+        <option value="<%=tournaments.get(i).getIdTorneo()%>"><%=tournaments.get(i).getNomTorneo()%></option>
         <%}%>
     </select>
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-block">Calculate</button>
     </div>
-
-
 </form>
 </body>
 </html>

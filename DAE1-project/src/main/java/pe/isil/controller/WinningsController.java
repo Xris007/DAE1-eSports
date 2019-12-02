@@ -18,7 +18,9 @@ public class WinningsController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Integer tournId = Integer.parseInt(req.getParameter("tournamentList"));
-        Double amount = Double.parseDouble(req.getParameter("txtWinnings"));
+        String amount = req.getParameter("txtWinnings");
+
+        System.out.println("Amount: " + amount);
 
         HttpSession session = req.getSession();
         session.setAttribute("tournamentId", tournId);

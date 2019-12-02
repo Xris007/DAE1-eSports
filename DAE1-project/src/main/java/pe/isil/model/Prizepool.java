@@ -3,12 +3,12 @@ package pe.isil.model;
 public class Prizepool {
     private Integer idPrizePool;
     private Integer place;
-    private Double percentage;
+    private double percentage;
 
     public Prizepool() {
     }
 
-    public Prizepool(Integer idPrizePool, Integer place, Double percentage) {
+    public Prizepool(Integer idPrizePool, Integer place, double percentage) {
         this.idPrizePool = idPrizePool;
         this.place = place;
         this.percentage = percentage;
@@ -30,7 +30,7 @@ public class Prizepool {
         this.place = place;
     }
 
-    public Double getPercentage() {
+    public double getPercentage() {
         return percentage;
     }
 

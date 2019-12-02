@@ -74,7 +74,7 @@ public class PrizepoolDAO {
         }
     }
 
-    public static void updatePercent(Integer id, Double porcentaje){
+    public static void updatePercent(Integer id, double porcentaje){
         if (findById(id) != null){
             try (Connection connection = DatabaseUtil.getConnection()) {
                 String sql = "UPDATE prizepool SET porcentaje = ? WHERE idprizepool = ?";
