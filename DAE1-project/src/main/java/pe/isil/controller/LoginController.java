@@ -1,4 +1,4 @@
-package pe.isil.LoginController;
+package pe.isil.controller;
 
 
 import pe.isil.dao.DaoContext;
@@ -44,7 +44,7 @@ public class LoginController extends HttpServlet {
         if (usuario != null){
             HttpSession session = req.getSession();
             session.setAttribute("username", usuario);
-            req.getRequestDispatcher("/prizepool.jsp").forward(req, resp);
+            req.getRequestDispatcher("/calculate_winnings.jsp").forward(req, resp);
         } else {
             req.setAttribute("errorMessage", "Wrong credentials");
             System.out.println("Incorrect user");

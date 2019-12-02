@@ -70,6 +70,29 @@ public class TeamDAO extends DaoContext {
             throw new RuntimeException(exception);
         }
     }
+    public static Team getTeamByTournament (Integer tournId) {
+        try (Connection connection = DatabaseUtil.getConnection()) {
+            String sql = "SELECT equipo.*, de.idtorneo from equipo" +
+                    "inner join detalle_equipo de on equipo.idequipo = de.idequipo" +
+                    "where idtorneo = ?";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                statement.setInt(1, tournId);
+
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    if (resultSet.next()) {
+                        Team team = getTeam(resultSet);
+                        return team;
+                    } else {
+                        System.err.println("No se ha encontrado registros");
+                        return null;
+                    }
+                }
+            }
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
+        }
+    }
+
     public static void update(Integer id, String name, String country){
         if (findById(id) != null){
             try (Connection connection = DatabaseUtil.getConnection()) {

@@ -16,8 +16,8 @@
 <body>
 <%
     List<Prizepool> prizepools = PrizepoolDAO.listPrizepool();
-    if (prizepools != null){
-        System.out.println("prizepool exists");
+    if (prizepools == null){
+        System.out.println("prizepool not found");
     }
 %>
 <%!

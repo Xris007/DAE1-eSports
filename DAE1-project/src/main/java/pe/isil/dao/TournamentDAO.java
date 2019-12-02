@@ -10,7 +10,7 @@ import java.util.List;
 public class TournamentDAO {
     public static Tournament createTournament (Tournament tournament){
         try (Connection connection = DatabaseUtil.getConnection()){
-            String sql = "INSERT INTO TORNEO(idtorneo, nomtorneo, orgtorneo, paistorneo, lugartorneo, fechainiciotorneo, fechafintorneo, idjuego) values (?, ?, ?, ?, ?, ?, ?, ?) ";
+            String sql = "INSERT INTO TORNEO(idtorneo, nomtorneo, orgtorneo, paistorneo, lugartorneo, ) values (?, ?, ?, ?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.setInt(1, tournament.getIdTorneo());
 
@@ -18,9 +18,6 @@ public class TournamentDAO {
                 statement.setString(3, tournament.getOrgTorneo());
                 statement.setString(4, tournament.getPaisTorneo());
                 statement.setString(5, tournament.getLugarTorneo());
-                statement.setDate(6,  new Date(tournament.getFechaInicioTorneo().getTime()));
-                statement.setDate(7,  new Date(tournament.getFechaFinTorneo().getTime()));
-                statement.setInt(8, tournament.getIdJuego());
 
                 int id = statement.executeUpdate();
                 tournament.setIdTorneo(id);
@@ -32,7 +29,7 @@ public class TournamentDAO {
     }
 
     public static List<Tournament> findAllTournament(){
-        List<Tournament> tournaments  = new ArrayList<Tournament>();
+        List<Tournament> tournaments  = new ArrayList<>();
         try (Connection connection = DatabaseUtil.getConnection()){
             String sql = "SELECT * FROM TORNEO";
             try (Statement statement = connection.createStatement()){
@@ -76,27 +73,22 @@ public class TournamentDAO {
                 resultSet.getString("NomTorneo"),
                 resultSet.getString("OrgTorneo"),
                 resultSet.getString("PaisTorneo"),
-                resultSet.getString("LugarTorneo"),
-                resultSet.getDate("FechaInicioTorneo"),
-                resultSet.getDate("FechaFinTorneo"),
-                resultSet.getInt("IdJuego")
+                resultSet.getString("LugarTorneo")
+
         );
         return tournament;
     }
 
-    public static void updateTournament(Integer idtorneo, String nomtorneo, String orgtorneo, String paistorneo, String lugartorneo, Date fechainiciotorneo, Date fechafintorneo, Integer idjuego){
+    public static void updateTournament(Integer idtorneo, String nomtorneo, String orgtorneo, String paistorneo, String lugartorneo){
         if (getById(idtorneo) != null){
             try (Connection connection = DatabaseUtil.getConnection()) {
-                String sql = "UPDATE TORNEO SET idtorneo = ?, nomtorneo = ?, orgtorneo = ?, paistorneo = ?,  lugartorneo = ?, fechainiciotorneo = ?, fechafintorneo = ?, idjuego = ? WHERE torneo = ?";
+                String sql = "UPDATE TORNEO SET idtorneo = ?, nomtorneo = ?, orgtorneo = ?, paistorneo = ?,  lugartorneo = ?,WHERE idtorneo = ?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, idtorneo);
                     statement.setString(2, nomtorneo);
                     statement.setString(3, orgtorneo);
                     statement.setString(4, paistorneo);
                     statement.setString(5, lugartorneo);
-                    statement.setDate(6, new Date(fechainiciotorneo.getTime()));
-                    statement.setDate(7, new Date(fechafintorneo.getTime()));
-                    statement.setInt(8, idjuego);
                     statement.executeUpdate();
                     System.out.println("Torneo actualizada");
                 }

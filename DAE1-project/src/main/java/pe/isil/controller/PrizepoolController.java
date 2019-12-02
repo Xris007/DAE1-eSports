@@ -1,10 +1,8 @@
-package pe.isil.LoginController;
+package pe.isil.controller;
 
-import pe.isil.dao.DaoContext;
 import pe.isil.dao.PrizepoolDAO;
 import pe.isil.model.Prizepool;
 
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

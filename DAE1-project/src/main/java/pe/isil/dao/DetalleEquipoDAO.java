@@ -65,6 +65,28 @@ public class DetalleEquipoDAO {
             throw new RuntimeException(exception);
         }
     }
+
+    public static DetalleEquipo getByTournament(Integer idTorneo) {
+        try (Connection connection = DatabaseUtil.getConnection()) {
+            String sql = "SELECT * FROM detalle_equipo WHERE IdTorneo=?";
+            try (PreparedStatement statement = connection.prepareStatement(sql)) {
+                statement.setInt(1, idTorneo);
+
+                try (ResultSet resultSet = statement.executeQuery()) {
+                    if (resultSet.next()) {
+                        DetalleEquipo detalleEquipo = getDetalleEquipo(resultSet);
+                        return detalleEquipo;
+                    } else {
+                        System.err.println("No se ha encontrado registros");
+                        return null;
+                    }
+                }
+            }
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
+        }
+    }
+
     private static DetalleEquipo getDetalleEquipo(ResultSet resultSet) throws SQLException {
         DetalleEquipo detalleEquipo = new DetalleEquipo(
                 resultSet.getInt("IdEquipo"),
