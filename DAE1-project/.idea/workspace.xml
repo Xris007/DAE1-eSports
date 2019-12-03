@@ -2,20 +2,36 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="DAE1-project:war exploded" />
+      <artifact name="eSports-proyect:war" />
+      <artifact name="eSports-proyect:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/DetalleEquipoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/DetalleEquipoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/PrizepoolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/PrizepoolDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/TournamentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/DAE1-project.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/eSports-proyect.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/DetalleEquipoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/DetalleEquipoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/PrizepoolDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/PrizepoolDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TeamDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TeamDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/isil/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/isil/dao/UserDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/DetalleEquipoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/DetalleEquipoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/PrizepoolDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/PrizepoolDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TeamDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TeamDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TournamentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/TournamentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/classes/pe/isil/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,8 +124,12 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ProjectId" id="1RqIFRIuJ2eCMdKeB4XhZ7yXT5c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,11 +143,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/images" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -146,10 +166,22 @@
       <recent name="D:\Roudebush\Proyecto\DAE1-eSports\DAE1-project\src\main\webapp" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pe.isil.Main" />
-      <module name="DAE1-project" />
+      <module name="eSports-proyect" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pe.isil.*" />
@@ -161,18 +193,18 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/DAE1_project_war_exploded/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/eSports_proyect_war_exploded/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="DAE1-project:war exploded">
+        <artifact name="eSports-proyect:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/DAE1_project_war_exploded" />
+            <option name="CONTEXT_PATH" value="/eSports_proyect_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_eSports-proyect" />
-        <option name="HTTP_PORT" value="8082" />
+        <option name="HTTP_PORT" value="8081" />
         <option name="JNDI_PORT" value="1097" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
@@ -231,8 +263,8 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
+          <artifact name="eSports-proyect:war" />
           <artifact name="eSports-proyect:war exploded" />
-          <artifact name="DAE1-project:war exploded" />
         </option>
       </method>
     </configuration>
@@ -247,25 +279,13 @@
     </recent_temporary>
   </component>
   <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -325,6 +345,8 @@
       <workItem from="1575261359170" duration="11000" />
       <workItem from="1575261389049" duration="1321000" />
       <workItem from="1575312081554" duration="10726000" />
+      <workItem from="1575330509619" duration="698000" />
+      <workItem from="1575331275774" duration="980000" />
     </task>
     <servers />
   </component>

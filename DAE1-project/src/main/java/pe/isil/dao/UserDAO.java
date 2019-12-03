@@ -9,7 +9,7 @@ import java.sql.*;
 public class UserDAO extends DaoContext {
 
     public static Usuario isValidLogin(String username, String password) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
 
             String sql = "SELECT * FROM usuario WHERE username=? AND password=?";
 
@@ -36,7 +36,7 @@ public class UserDAO extends DaoContext {
 
             }
 
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
 
         }

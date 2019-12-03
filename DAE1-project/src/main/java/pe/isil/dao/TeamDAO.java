@@ -9,7 +9,7 @@ import java.util.List;
 
 public class TeamDAO extends DaoContext {
     public static Team create(Team team){
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "INSERT INTO equipo (idequipo, nomequipo, paisequipo) values (?, ?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.setInt(1, team.getIdEquipo());
@@ -20,13 +20,13 @@ public class TeamDAO extends DaoContext {
                 team.setIdEquipo(id);
                 return team;
             }
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
     public static List<Team> findAllTeams(){
         List<Team> teams = new ArrayList<Team>();
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "SELECT * FROM equipo";
             try (Statement statement = connection.createStatement()){
                 try (ResultSet resultSet = statement.executeQuery(sql)){
@@ -51,7 +51,7 @@ public class TeamDAO extends DaoContext {
         return team;
     }
     public static Team findById (Integer id) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
             String sql = "SELECT * FROM equipo WHERE idequipo=?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, id);
@@ -71,7 +71,7 @@ public class TeamDAO extends DaoContext {
         }
     }
     public static Team getTeamByTournament (Integer tournId) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
             String sql = "SELECT equipo.*, de.idtorneo from equipo" +
                     "inner join detalle_equipo de on equipo.idequipo = de.idequipo" +
                     "where idtorneo = ?";
@@ -95,7 +95,7 @@ public class TeamDAO extends DaoContext {
 
     public static void update(Integer id, String name, String country){
         if (findById(id) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "UPDATE equipo SET nomequipo = ?, paisequipo = ? WHERE idequipo = ?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setString(1, name);
@@ -114,7 +114,7 @@ public class TeamDAO extends DaoContext {
     }
     public static void delete(Integer id){
         if (findById(id) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "DELETE FROM equipo WHERE idequipo=?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, id);

@@ -14,6 +14,7 @@
     <title>Title</title>
 </head>
 <body>
+<br>
 <%
     List<Prizepool> prizepools = PrizepoolDAO.listPrizepool();
     if (prizepools == null){
@@ -35,6 +36,9 @@
                 </tr>
                 <%
                     for(Prizepool prizepool : prizepools) {
+                        if (prizepool == prizepools.get(0)){
+                            prizepoolCounter = 1;
+                        }
                 %>
                 <tr>
                     <td class="text-center"><%=prizepool.getPlace()%></td>

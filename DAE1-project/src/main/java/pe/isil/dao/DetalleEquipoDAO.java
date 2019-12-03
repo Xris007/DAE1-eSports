@@ -7,9 +7,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DetalleEquipoDAO {
+public class DetalleEquipoDAO extends DaoContext {
     public static DetalleEquipo createDetalleEquipo (DetalleEquipo detalleEquipo){
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "INSERT INTO detalle_equipo(idequipo, idtorneo, Victorias, Derrotas, Puesto) values (?, ?, ?, ?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.setInt(1, detalleEquipo.getIdTorneo());
@@ -23,13 +23,13 @@ public class DetalleEquipoDAO {
                 detalleEquipo.setIdTorneo(id);
                 return detalleEquipo;
             }
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
     public static List<DetalleEquipo> findAllDetalleEquipo(){
         List<DetalleEquipo> detalleEquipos  = new ArrayList<DetalleEquipo>();
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "SELECT * FROM detalle_equipo";
             try (Statement statement = connection.createStatement()){
                 try (ResultSet resultSet = statement.executeQuery(sql)){
@@ -45,7 +45,7 @@ public class DetalleEquipoDAO {
         return detalleEquipos;
     }
     public static DetalleEquipo getById(Integer idEquipo, Integer idTorneo) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
             String sql = "SELECT * FROM detalle_equipo WHERE IdTorneo=? AND idequipo=?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, idTorneo);
@@ -67,7 +67,7 @@ public class DetalleEquipoDAO {
     }
 
     public static DetalleEquipo getByTournament(Integer idTorneo) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
             String sql = "SELECT * FROM detalle_equipo WHERE IdTorneo=?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, idTorneo);
@@ -100,7 +100,7 @@ public class DetalleEquipoDAO {
 
     public static void updateDetalleEquipoByTorneo(Integer IdEquipo, Integer IdTorneo, Integer Victorias, Integer Derrotas, Integer Puesto){
         if (getById(IdEquipo, IdTorneo) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "UPDATE detalle_equipo SET idequipo = ?, idtorneo = ?, victorias = ?, derrotas = ?,  puesto = ? WHERE idtorneo = ?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, IdEquipo);
@@ -122,7 +122,7 @@ public class DetalleEquipoDAO {
 
     public static void updateDetalleEquipoByEquipo(Integer IdEquipo, Integer IdTorneo, Integer Victorias, Integer Derrotas, Integer Puesto){
         if (getById(IdEquipo, IdTorneo) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "UPDATE detalle_equipo SET idequipo = ?, idtorneo = ?, victorias = ?, derrotas = ?,  puesto = ? WHERE idequipo = ?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, IdEquipo);
@@ -144,7 +144,7 @@ public class DetalleEquipoDAO {
 
     public static void deleteDetalleEquipo(Integer idEquipo, Integer idTorneo){
         if (getById(idEquipo,idTorneo) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "DELETE FROM detalle_equipo WHERE idtorneo=? AND idequipo";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, idTorneo);

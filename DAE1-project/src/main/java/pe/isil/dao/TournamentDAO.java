@@ -7,9 +7,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TournamentDAO {
+public class TournamentDAO extends DaoContext {
     public static Tournament createTournament (Tournament tournament){
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection =  DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "INSERT INTO TORNEO(idtorneo, nomtorneo, orgtorneo, paistorneo, lugartorneo, ) values (?, ?, ?, ?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.setInt(1, tournament.getIdTorneo());
@@ -23,14 +23,14 @@ public class TournamentDAO {
                 tournament.setIdTorneo(id);
                 return tournament;
             }
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     public static List<Tournament> findAllTournament(){
         List<Tournament> tournaments  = new ArrayList<>();
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "SELECT * FROM TORNEO";
             try (Statement statement = connection.createStatement()){
                 try (ResultSet resultSet = statement.executeQuery(sql)){
@@ -47,7 +47,7 @@ public class TournamentDAO {
     }
 
     public static Tournament getById(Integer id) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
             String sql = "SELECT * FROM TORNEO WHERE IdTorneo=?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, id);
@@ -81,7 +81,7 @@ public class TournamentDAO {
 
     public static void updateTournament(Integer idtorneo, String nomtorneo, String orgtorneo, String paistorneo, String lugartorneo){
         if (getById(idtorneo) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "UPDATE TORNEO SET idtorneo = ?, nomtorneo = ?, orgtorneo = ?, paistorneo = ?,  lugartorneo = ?,WHERE idtorneo = ?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, idtorneo);
@@ -102,7 +102,7 @@ public class TournamentDAO {
 
     public static void deleteTournament(Integer id){
         if (getById(id) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "DELETE FROM TORNEO WHERE idtorneo=?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setInt(1, id);

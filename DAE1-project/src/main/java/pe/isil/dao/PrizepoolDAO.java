@@ -8,10 +8,10 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrizepoolDAO {
+public class PrizepoolDAO extends DaoContext{
 
     public static Prizepool create(Prizepool prizepool){
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "INSERT INTO prizepool (puesto, porcentaje) values (?, ?) ";
             try (PreparedStatement statement = connection.prepareStatement(sql)){
                 statement.setInt(1, prizepool.getPlace());
@@ -21,14 +21,14 @@ public class PrizepoolDAO {
                 prizepool.setIdPrizePool(id);
                 return prizepool;
             }
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     public static List<Prizepool> listPrizepool(){
         List<Prizepool> prizepools = new ArrayList<Prizepool>();
-        try (Connection connection = DatabaseUtil.getConnection()){
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)){
             String sql = "SELECT * FROM prizepool ORDER BY puesto";
             try (Statement statement = connection.createStatement()){
                 try (ResultSet resultSet = statement.executeQuery(sql)){
@@ -54,7 +54,7 @@ public class PrizepoolDAO {
     }
 
     public static Prizepool findById (Integer id) {
-        try (Connection connection = DatabaseUtil.getConnection()) {
+        try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
             String sql = "SELECT * FROM prizepool WHERE idprizepool=?";
             try (PreparedStatement statement = connection.prepareStatement(sql)) {
                 statement.setInt(1, id);
@@ -76,7 +76,7 @@ public class PrizepoolDAO {
 
     public static void updatePercent(Integer id, double porcentaje){
         if (findById(id) != null){
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "UPDATE prizepool SET porcentaje = ? WHERE idprizepool = ?";
                 try(PreparedStatement statement = connection.prepareStatement(sql)){
                     statement.setDouble(1, porcentaje);
@@ -95,7 +95,7 @@ public class PrizepoolDAO {
 
     public static void delete(Integer id) {
         if (findById(id) != null) {
-            try (Connection connection = DatabaseUtil.getConnection()) {
+            try (Connection connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword)) {
                 String sql = "DELETE FROM prizepool WHERE idprizepool=?";
                 try (PreparedStatement statement = connection.prepareStatement(sql)) {
                     statement.setInt(1, id);
