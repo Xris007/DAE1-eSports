@@ -8,12 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/controller/PrizepoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/PrizepoolController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -342,7 +338,7 @@
       <workItem from="1575330509619" duration="698000" />
       <workItem from="1575331275774" duration="1756000" />
       <workItem from="1575333119801" duration="1815000" />
-      <workItem from="1575336846785" duration="1031000" />
+      <workItem from="1575336846785" duration="1446000" />
     </task>
     <servers />
   </component>

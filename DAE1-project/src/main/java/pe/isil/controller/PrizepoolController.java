@@ -21,7 +21,7 @@ public class PrizepoolController extends HttpServlet {
         Double prizepool;
         List<Prizepool> prizepools = PrizepoolDAO.listPrizepool();
 
-        for (int i = 1; i<=18; i++){
+        for (int i = 1; i<=prizepools.size(); i++){
             prizepool = Double.parseDouble(req.getParameter("txtPrizepool" + i));
 
             if (!prizepool.equals(prizepools.get(i - 1).getPercentage())){

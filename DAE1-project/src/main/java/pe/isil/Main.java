@@ -1,6 +1,7 @@
 package pe.isil;
 
 import org.h2.engine.User;
+import pe.isil.dao.DaoContext;
 import pe.isil.dao.PrizepoolDAO;
 import pe.isil.dao.TournamentDAO;
 import pe.isil.dao.UserDAO;
@@ -14,7 +15,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.List;
 
-public class Main {
+public class Main extends DaoContext {
 
     private static EntityManager entityManager;
     private static EntityManagerFactory builder;
@@ -44,6 +45,7 @@ public class Main {
         //System.out.println(tournament.toString());
 
         List<Prizepool> prizepools = PrizepoolDAO.listPrizepool();
+        System.out.println(prizepools.size());
 
 //        usuarioService.delete(2000);
 
