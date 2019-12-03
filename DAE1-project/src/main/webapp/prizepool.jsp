@@ -70,7 +70,7 @@
         System.out.println("prizepool not found");
     }
 %>
-<%!
+<%
     int prizepoolCounter = 1;
     String txt = "txtPrizepool";
 %>
@@ -85,9 +85,9 @@
                 </thead>
                 <%
                     for(Prizepool prizepool : prizepools) {
-                        if (prizepool == prizepools.get(0)){
+                        /*if (prizepool == prizepools.get(0)){
                             prizepoolCounter = 1;
-                        }
+                        }*/
                 %>
                 <tr>
                     <td class="text-center"><%=prizepool.getPlace()%></td>

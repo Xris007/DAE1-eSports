@@ -9,20 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e7de4c91-edf2-4da1-b69c-a346ddcf1a4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/calculate_winnings_showTeams.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/calculate_winnings_showTeams.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/isil/controller/PrizepoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/isil/controller/PrizepoolController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/prizepool.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/showprizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/showprizepool.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/teams.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/teams.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/calculate_winnings_showTeams.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/calculate_winnings_showTeams.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/prizepool.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/showprizepool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/showprizepool.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/teams.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/eSports-proyect-1.0-SNAPSHOT/teams.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +266,17 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fe1395fe" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@fe1395fe" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@7d462464" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -340,7 +341,8 @@
       <workItem from="1575312081554" duration="10726000" />
       <workItem from="1575330509619" duration="698000" />
       <workItem from="1575331275774" duration="1756000" />
-      <workItem from="1575333119801" duration="1631000" />
+      <workItem from="1575333119801" duration="1815000" />
+      <workItem from="1575336846785" duration="1031000" />
     </task>
     <servers />
   </component>
