@@ -66,13 +66,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">eSports</a>
+            <a class="navbar-brand" href="home.jsp">eSports</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="calculate_winnings.jsp">CALCULATE</a></li>
                 <li><a href="teams.jsp">SHOW TEAMS</a></li>
-                <li><a href="login.jsp">WHERE</a></li>
+                <li><a href="showprizepool.jsp">PERCENTAGES</a></li>
             </ul>
         </div>
     </div>
